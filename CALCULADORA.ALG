@@ -5,11 +5,11 @@ Algoritmo "calculadora"
 // Autor(a)    : Bughunters
 // Data atual  : 15/09/2025
 Var
-// Seção de Declarações das variáveis
-   opcao:inteiro
+   // Seção de Declarações das variáveis
+   opcao, Valor1, Valor2, limite:inteiro
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc...
+   // Seção de Comandos, procedimento, funções, operadores, etc...
    enquanto opcao <>6 faca
       escreval ("------MENU CALCULADORA-------")
       escreval ("")
@@ -18,8 +18,7 @@ Inicio
       escreval (" 03 - Fibonacci")
       escreval (" 04 - Sequência Geométrica")
       escreval (" 05 - Sequência Alternada")
-      escreval (" 06 - Números Primos")
-      escreval (" 07 - Sair")
+      escreval (" 06 - Sair")
       escreval ("")
       Escreval ("-----------------------------")
       leia (opcao)
@@ -31,7 +30,25 @@ Inicio
          escreval ("Você escolheu a opção 02 - Fatorial")
       fimse
       se opcao =3 entao
-         escreval ("Você escolheu a opção 03 - Sequencia de Fibonacci")
+         escreval("Bem vindo ao calculo de Fibonacci. Digite os dois valores:")
+         repita
+            escreval("Digite o primeiro valor:")
+            leia(Valor1)
+            escreval("Digite o segundo valor:")
+            leia(Valor2)
+            escreval("Digite o limite:")
+            leia(limite)
+
+            se (Valor1 e Valor2) = 0 entao
+               escreval("Você digitou 0 nos dois valores, isso da sequência infinita!")
+            senao
+               enquanto Valor2 <= limite faca
+                  escreva(Valor1, Valor2)
+                  Valor1 <- Valor1 + Valor2
+                  Valor2 <- Valor1 + Valor2
+               fimenquanto
+            fimse
+         até (Valor1 e Valor2) <> 0
       fimse
       se opcao =4 entao
          escreval ("Você escolheu a opção 04 - Sequencia Geométrica")
@@ -40,11 +57,7 @@ Inicio
          escreval ("Você escolheu a opção 05 - Sequência Alternada")
       fimse
       se opcao =6 entao
-         escreval ("Você escolheu a opção 06 - Números Primos")
-      fimse
-      se opcao =7 entao
-         escreval ("Você escolheu a opção 07 - SAIR")
+         escreval ("Você escolheu a opção 06 - SAIR")
       fimse
    fimenquanto
-
 Fimalgoritmo
