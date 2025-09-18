@@ -6,7 +6,7 @@ Algoritmo "calculadora"
 // Data atual  : 15/09/2025
 Var
    // Seção de Declarações das variáveis
-   opcao, Valor1, Valor2, limite:inteiro
+   opcao, Valor1, Valor2, limite,proximo:inteiro
 
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
@@ -32,21 +32,28 @@ Inicio
       se opcao =3 entao
          escreval("Bem vindo ao calculo de Fibonacci. Digite os dois valores:")
          repita
+         repita
             escreval("Digite o primeiro valor:")
             leia(Valor1)
             escreval("Digite o segundo valor:")
             leia(Valor2)
             escreval("Digite o limite:")
             leia(limite)
-
+            
+            se limite < (Valor1 e Valor2) entao
+             escreval ("Valor limite tem que ser maior que os valores iniciais.")
+              fimse
+              até (Valor1 e Valor2) < limite
             se (Valor1 e Valor2) = 0 entao
                escreval("Você digitou 0 nos dois valores, isso da sequência infinita!")
             senao
-               enquanto Valor2 <= limite faca
-                  escreva(Valor1, Valor2)
-                  Valor1 <- Valor1 + Valor2
-                  Valor2 <- Valor1 + Valor2
+               enquanto Valor1 <= limite faca
+                  escreva(Valor1)
+                  proximo <- Valor1 + Valor2
+                  Valor1 <- Valor2
+                  Valor2 <- proximo
                fimenquanto
+               escreval ("")
             fimse
          até (Valor1 e Valor2) <> 0
       fimse
