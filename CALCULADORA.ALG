@@ -6,11 +6,12 @@ Algoritmo "calculadora"
 // Data atual  : 15/09/2025
 Var
    // Seção de Declarações das variáveis
-   opcao, Valor1, Valor2, limite,proximo:inteiro
+   opcao, num_inicio, num_fim, i, quadrado, cont, Valor1, Valor2, limite, proximo:inteiro
 
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
    enquanto opcao <>6 faca
+      escreval ("")
       escreval ("------MENU CALCULADORA-------")
       escreval ("")
       escreval (" 01 - Quadrados Perfeitos ")
@@ -25,6 +26,28 @@ Inicio
       limpatela
       se opcao =1 entao
          escreval ("Você escolheu a opção 01 - Quadrados Perfeitos")
+         repita
+            escreval ("Digite o primeiro número: ")
+            leia (num_inicio)
+            escreval ("Digite o segundo número (deve ser maior que o primeiro): ")
+            leia (num_fim)
+         até (num_fim > num_inicio)
+         limpatela
+         escreval ("Quadrados perfeitos dentro do período",num_inicio," e",num_fim,": ")
+         enquanto (quadrado <= num_fim) faça
+            para i <- 1 até num_fim faça
+               quadrado <- i * i
+               se (quadrado >= num_inicio) e (quadrado <= num_fim) então
+                  escreval(quadrado)
+                  cont <- cont + 1
+               fimse
+            fimpara
+         fimenquanto
+         se (cont = 0) então
+            escreval("Não há quadrados perfeitos no intervalo determinado")
+         fimse
+         quadrado <- 0
+         cont <- 0
       fimse
       se opcao =2 entao
          escreval ("Você escolheu a opção 02 - Fatorial")
@@ -39,8 +62,8 @@ Inicio
             leia(Valor2)
             escreval("Digite o limite:")
             leia(limite)
-            
-            se limite < (Valor1 e Valor2) entao
+
+            se (limite < Valor1) e (limite < Valor2) entao
              escreval ("Valor limite tem que ser maior que os valores iniciais.")
               fimse
               até (Valor1 e Valor2) < limite
@@ -68,3 +91,4 @@ Inicio
       fimse
    fimenquanto
 Fimalgoritmo
+
