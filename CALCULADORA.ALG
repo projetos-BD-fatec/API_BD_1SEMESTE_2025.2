@@ -6,7 +6,7 @@ Algoritmo "calculadora"
 // Data atual  : 15/09/2025
 Var
    // Seção de Declarações das variáveis
-   opcao, num_inicio, num_fim, i, quadrado, cont, Valor1, Valor2, limite, proximo:inteiro
+   opcao, num_inicio, num_fim, i, quadrado, cont, Valor1, Valor2, limite, número, resultado ,proximo:inteiro
 
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
@@ -51,6 +51,23 @@ Inicio
       fimse
       se opcao =2 entao
          escreval ("Você escolheu a opção 02 - Fatorial")
+escreval ("Digite um numero inteiro para calcular o fatorial")
+   leia (numero)
+   limpatela
+   enquanto (numero <0) faca
+      escreval ("O fatorial não é definido para numeros negativos")
+      escreval ("Digite novamente um numero inteiro positivo: ")
+   leia (numero)
+   limpatela
+fimenquanto
+
+   resultado <-1
+   para i de 1 ate numero faça
+      resultado<- resultado*i
+      fimpara
+
+
+      escreval ("O fatorial de ", numero ," é ", resultado)
       fimse
       se opcao =3 entao
          escreval("Bem vindo ao calculo de Fibonacci. Digite os dois valores:")
