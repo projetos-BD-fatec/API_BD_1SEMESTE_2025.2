@@ -6,7 +6,7 @@ Algoritmo "calculadora"
 // Data atual  : 15/09/2025
 Var
    // Seção de Declarações das variáveis
-   opcao, num_inicio, num_fim, i, quadrado, cont, Valor1, Valor2, limite, número, resultado ,proximo:inteiro
+   opcao, num_inicio, num_fim, i, quadrado, cont, Valor1, Valor2, limite, numero, resultado ,proximo:inteiro
 
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
@@ -108,4 +108,5 @@ fimenquanto
       fimse
    fimenquanto
 Fimalgoritmo
+
 
