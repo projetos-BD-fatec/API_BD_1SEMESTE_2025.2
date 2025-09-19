@@ -61,6 +61,13 @@ escreval ("Digite um numero inteiro para calcular o fatorial")
    limpatela
 fimenquanto
 
+enquanto (numero > 12) faca
+      escreval("O limite fatorial é ate o numero 12")
+      escreval("Digite novamente o numero:")
+   leia(numero)
+   limpatela
+fimenquanto
+
    resultado <-1
    para i de 1 ate numero faça
       resultado<- resultado*i
@@ -108,5 +115,6 @@ fimenquanto
       fimse
    fimenquanto
 Fimalgoritmo
+
 
 
