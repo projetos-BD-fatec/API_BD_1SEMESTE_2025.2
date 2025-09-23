@@ -1,6 +1,4 @@
 # API 1º Semestre BD
-# BugHunters
-
 
 <p align="center">
       <img src="imagens\bughunters.png" alt="logo da BugHunters" width="200">
