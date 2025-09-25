@@ -51,47 +51,48 @@ Inicio
       fimse
       se opcao =2 entao
          escreval ("Você escolheu a opção 02 - Fatorial")
-escreval ("Digite um numero inteiro para calcular o fatorial")
-   leia (numero)
-   limpatela
-   enquanto (numero <0) faca
-      escreval ("O fatorial não é definido para numeros negativos")
-      escreval ("Digite novamente um numero inteiro positivo: ")
-   leia (numero)
-   limpatela
-fimenquanto
+         escreval ("Digite um numero inteiro para calcular o fatorial")
+         leia (numero)
+         limpatela
+         enquanto (numero <0) faca
+            escreval ("O fatorial não é definido para numeros negativos")
+            escreval ("Digite novamente um numero inteiro positivo: ")
+            leia (numero)
+            limpatela
+         fimenquanto
 
-enquanto (numero > 12) faca
-      escreval("O limite fatorial é ate o numero 12")
-      escreval("Digite novamente o numero:")
-   leia(numero)
-   limpatela
-fimenquanto
+         enquanto (numero > 12) faca
+            escreval("O limite fatorial é ate o numero 12")
+            escreval("Digite novamente o numero:")
+            leia(numero)
+            limpatela
+         fimenquanto
 
-   resultado <-1
-   para i de 1 ate numero faça
-      resultado<- resultado*i
-      fimpara
+         resultado <-1
+         para i de 1 ate numero faça
+            resultado<- resultado*i
+         fimpara
 
-
-      escreval ("O fatorial de ", numero ," é ", resultado)
+         escreval ("O fatorial de ", numero ," é ", resultado)
       fimse
       se opcao =3 entao
-         escreval("Bem vindo ao calculo de Fibonacci. Digite os dois valores:")
+         escreval("Bem vindo ao calculo de Fibonacci. Digite dois valores:")
          repita
-         repita
-            escreval("Digite o primeiro valor:")
-            leia(Valor1)
-            escreval("Digite o segundo valor:")
-            leia(Valor2)
-            escreval("Digite o limite:")
-            leia(limite)
+            repita
+               escreval("Digite o primeiro valor:")
+               leia(Valor1)
+               escreval("Digite o segundo valor:")
+               leia(Valor2)
+               escreval("Digite o limite:")
+               leia(limite)
 
-            se (limite < Valor1) e (limite < Valor2) entao
-             escreval ("Valor limite tem que ser maior que os valores iniciais.")
-              fimse
-              até (Valor1 e Valor2) < limite
+               se (limite < Valor1) e (limite < Valor2) entao
+                  limpatela
+                  escreval ("Valor limite tem que ser maior que os valores iniciais.")
+               fimse
+            até (Valor1 e Valor2) < limite
             se (Valor1 e Valor2) = 0 entao
+               limpatela
                escreval("Você digitou 0 nos dois valores, isso da sequência infinita!")
             senao
                enquanto Valor1 <= limite faca
@@ -115,6 +116,7 @@ fimenquanto
       fimse
    fimenquanto
 Fimalgoritmo
+
 
 
 
