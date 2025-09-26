@@ -27,7 +27,7 @@ Inicio
       se opcao =1 entao
          escreval ("Você escolheu a opção 01 - Quadrados Perfeitos")
          repita
-            escreval ("Digite o primeiro número: ")
+            escreval ("Digite o primeiro número (deve ser positivo): ")
             leia (num_inicio)
             escreval ("Digite o segundo número (deve ser maior que o primeiro): ")
             leia (num_fim)
@@ -116,6 +116,7 @@ Inicio
       fimse
    fimenquanto
 Fimalgoritmo
+
 
 
 
