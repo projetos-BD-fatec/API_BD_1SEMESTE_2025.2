@@ -28,6 +28,6 @@ termine quando o usuário selecionar a mesma.
 
 ## 👤 Equipe
 
-PO: Lucas Monteiro
-Scrum Master: Abraão Prado
+PO: Lucas Monteiro <br>
+Scrum Master: Abraão Prado <br>
 Dev Team: Isabelle Cristine, Melina Ito, Ramon, Tyelle Raíssa.
