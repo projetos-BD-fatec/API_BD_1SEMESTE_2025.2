@@ -5,7 +5,7 @@
       <h2 align="center">BugHunters</h2>
 </p>
 
-## O desafio
+## 🏅 O desafio
 
 O desafio consiste em criar uma calculadora que dê ao usuário nove opções de cálculos diferentes. No 
 programa deve haver um menu que mostre cada uma das opções mais uma opção de sair, onde o programa só
