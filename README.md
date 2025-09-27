@@ -50,16 +50,14 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
 
 * User Stories com **Critérios de Aceitação**
 * Subtarefas divididas **a partir das US**
-* Design no **Trello**
-* Modelagem do **Banco de Dados**
+* Ferramenta de Organização **Trello**
 
 
 ## 🏆 DoD - Definition of Done <a id="dod"></a>
 
 * Manual de Usuário
-* Manual da Aplicação
 * Documentação da API (Application Programming Interface)
-* Código completo
+* Requisitos - 1.Quadrados Perfeitos; 2.Fatorial, 3.Sequência Fibonacci
 
 ---
 
