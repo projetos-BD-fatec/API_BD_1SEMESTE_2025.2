@@ -5,6 +5,7 @@
       <h2 align="center">BugHunters</h2>
 </p>
 
+
 <p align="center">
   | <a href ="#desafio"> Desafio</a>  |
   <a href ="#solucao"> Solução</a>  |   
@@ -15,6 +16,7 @@
   <a href ="#tecnologias">Tecnologias</a> |
   <a href ="#manual">Manual de Instalação</a>  | 
   <a href ="#equipe"> Equipe</a> |
+
 
   </p>
   
@@ -92,7 +94,6 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
 
 ---
 
-## 👤 Equipe
 ## 🎓 Equipe <a id="equipe"></a>
 
 <div align="center">
