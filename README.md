@@ -120,7 +120,7 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
       <td>Isabelle Cristine</td>
       <td>Desenvolvedor</td>
       <td><a href="https://github.com/bellecristines"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td><a href=" "><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+      <td><a href="https://www.linkedin.com/in/isabelle-leite-597a66362/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr>
     <tr>
       <td>Melina Ito</td>
