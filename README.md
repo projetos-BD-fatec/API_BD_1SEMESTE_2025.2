@@ -55,8 +55,8 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
 
 ## 🏆 DoD - Definition of Done <a id="dod"></a>
 - [ ] Código final escrito e funcional
-- [ ] Code review aprovado
 - [ ] Documentação finalizada
+- [ ] Code review aprovado
 
 ---
 
@@ -65,7 +65,7 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
 | Sprint          |    Período    | Documentação    |
 | --------------- | :-----------: | --------------- |
 | 🔖 **SPRINT 1** | 08/09 - 28/09 | [Sprint 1 Docs](Sprints/Sprint1) |
-| 🔖 **SPRINT 2** | 06/10 - 26/10 | [Sprint 2 Docs](Sprint/Sprints2) |
+| 🔖 **SPRINT 2** | 06/10 - 26/10 | [Sprint 2 Docs](Sprints/Sprint2) |
 | 🔖 **SPRINT 3** | 03/11 - 23/11 | [Sprint 3 Docs](Sprints/Sprint3) |
 
 ---
