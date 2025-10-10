@@ -5,9 +5,8 @@
       <h2 align="center">BugHunters</h2>
 </p>
 
-
 <p align="center">
-  | <a href ="#desafio"> Desafio</a>  |
+| <a href ="#desafio"> Desafio</a>  |
   <a href ="#solucao"> Solução</a>  |   
   <a href ="#backlog"> Backlog do Produto</a>  |
   <a href ="#dor">DoR</a>  |
@@ -16,9 +15,7 @@
   <a href ="#tecnologias">Tecnologias</a> |
   <a href ="#manual">Manual de Instalação</a>  | 
   <a href ="#equipe"> Equipe</a> |
-
-
-  </p>
+</p>
   
 ## 🏅 O desafio
 
@@ -34,16 +31,16 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
 ## 📋 Backlog do Produto <a id="backlog"></a>
 
 | Rank | Prioridade | User story | Sprint | Status |
-| :--: | :--------: | -------------------------------------------------------------------------------------------------------------------------------------------------- | :----: | :----: |
-|   1  |    Alta    | Como usuário, quero que implemente uma opção que calcule quais números são quadrados perfeitos dentro de um intervalo (inteiro e positivo) que eu definir | 1 | ✅ |
-|   2  |    Alta    | Como usuário, quero que implemente uma opção que calcule o fatorial de um número (inteiro e positivo) que eu definir.| 1 | ✅ |
+| :--: | :--------: | --------------------------------------------------------------------------------------------------------------------------------------------------------- | :--: | :--: |
+|   1  |    Alta    | Como usuário, quero que implemente uma opção que calcule quais números são quadrados perfeitos dentro de um intervalo (inteiro e positivo) que eu definir |  1   |  ✅ |
+|   2  |    Alta    | Como usuário, quero que implemente uma opção que calcule o fatorial de um número (inteiro e positivo) que eu definir. | 1 | ✅ |
 |   3  |    Alta    | Como usuário, quero que implemente a opção de calcular a sequência de Fibonacci, onde eu insira os dois valores inciais e o valor limite. | 1 | ✅ |
-|   4  |    Média   | Como usuário, quero que implemente um menu em que eu possa selecionar qual calculo matemático eu quero realizar e só feche quando eu selecionar a opção de sair. | 2 |   |
+|   4  |    Média   | Como usuário, quero que implemente um menu em que eu possa selecionar qual calculo matemático eu quero realizar e só feche quando eu selecionar a opção de sair. | 2 |  |
 |   5  |    Média   | Como usuário, quero calcular uma sequência geométrica, podendo definir o valor inicial, final e o valor da razão, que podem ser positivos ou negativos, desde que sejam diferentes de -1, 0 e 1. | 2 |   |
 |   6  |    Média   | Como usuário, quero que implemente uma opção que me dê uma sequência alternada, em que eu defina o valor inicial e final e que o número dobre a cada termo. | 2 |   |
-|   7  |    Baixa   | Como usuário, quero que implemente uma opção que calcule quais os números primos dentro de um intervalo (inteiro e positivo) que eu definir. | 3 |   |
+|   7  |    Média   | Como usuário, quero que implemente uma opção que calcule quais os números primos dentro de um intervalo (inteiro e positivo) que eu definir. | 3 |   |
 |   8  |    Baixa   | Como usuário, quero que implemente a opção de calcular a sequência de Tribonacci, onde eu insira os três valores iniciais e o valor limite. | 3 |   |
-|  9  |    Baixa   | Como usuário, quero que implemente a opção de calcular qual o número triangular do valor (inteiro e positivo) que eu definir. | 3 |   |
+|  9   |    Baixa   | Como usuário, quero que implemente a opção de calcular qual o número triangular do valor (inteiro e positivo) que eu definir. | 3 |   |
 |  10  |    Baixa   | Como usuário, quero que implemente uma opção que calcule uma sequencia de cubos dentro de um intervalo (inteiro e positivo) que eu definir. | 3 |   |
 
 ---
@@ -65,20 +62,19 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
 
 ## 📅 Cronograma de Sprints <a id="sprint"></a>
 
-| Sprint          |    Período    | Documentação                                     |
-| --------------- | :-----------: | ------------------------------------------------ |
-| 🔖 **SPRINT 1** | 08/09 - 28/09 | [Sprint 1 Docs]([./docs/processo/sprints/sprint-1/README.md](https://github.com/projetos-BD-fatec/API_BD_1SEMESTE_2025.2/blob/c33978016f700d60254d4a27f4b97bcf9e164337/README.md)) |
-| 🔖 **SPRINT 2** | 06/10 - 26/10 | [Sprint 2 Docs]                                             |
-| 🔖 **SPRINT 3** | 03/11 - 23/11 | [Sprint 3 Docs]                                             |
+| Sprint          |    Período    | Documentação    |
+| --------------- | :-----------: | --------------- |
+| 🔖 **SPRINT 1** | 08/09 - 28/09 | [Sprint 1 Docs] |
+| 🔖 **SPRINT 2** | 06/10 - 26/10 | [Sprint 2 Docs] |
+| 🔖 **SPRINT 3** | 03/11 - 23/11 | [Sprint 3 Docs] |
 
 ---
 
 ## 💻 Tecnologias <a id="tecnologias"></a>
 
 <h4 align="center">
-      <a href="https://sourceforge.net/projects/visualg30/"/></a>
- <a href="https://id.atlassian.com/signup?application=trello&continue=https%3A%2F%2Ftrello.com%2Fauth%2Fatlassian%2Fcallback%3Fdisplay%3DeyJ2ZXJpZmljYXRpb25TdHJhdGVneSI6InNvZnQifQ%253D%253D%26createMember%3Dtrue&display=eyJ2ZXJpZmljYXRpb25TdHJhdGVneSI6InNvZnQifQ%3D%3D"/></a>
- <a href="https://github.com/"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/></a>
+      <a href="https://sourceforge.net/projects/visualg30/"/><img src="https://img.shields.io/badge/visualg-blue.svg?style=for-the-badge&logo=Visualg&logoColor=white"/></a>
+      <a href="https://github.com/"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/></a>
 </h4>
 
 ## 📖 Manual de Instalação <a id="manual"></a>
@@ -86,11 +82,6 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
 ### 🛠 Pré-requisitos
 
 - VisualG([Download](https://sourceforge.net/projects/visualg30/))
-
-- Git ([Download](https://git-scm.com/downloads))
-
-- Trello ([Download](https://apps.microsoft.com/detail/9nblggh4xxvw?hl=en-US&gl=US#activetab=pivot:overviewtab))
-
 
 ---
 
@@ -108,7 +99,7 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
       <td>Lucas Monteiro</td>
       <td>Product Owner</td>
       <td><a href="https://github.com/lhmontech"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td><a href="https://www.linkedin.com/in/ivan-duarte-982532217"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+      <td><a href="https://www.linkedin.com/in/lucas-henrique-monteiro-55101a365"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr>
     <tr>
       <td>Abraão Prado</td>
