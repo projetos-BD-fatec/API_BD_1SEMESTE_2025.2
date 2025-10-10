@@ -1,4 +1,4 @@
-# API 1º Semestre BD
+# 👾 API 1º Semestre BD
 
 <p align="center">
       <img src="imagens\bughunters.png" alt="logo da BugHunters" width="200">
@@ -17,16 +17,17 @@
   <a href ="#equipe"> Equipe</a> |
 </p>
   
-## 🏅 O desafio
+## 🏅 O desafio <a id="desafio"></a>
 
 O desafio consiste em criar uma calculadora que dê ao usuário nove opções de cálculos diferentes. No 
 programa deve haver um menu que mostre cada uma das opções mais uma opção de sair, onde o programa só
 termine quando o usuário selecionar a mesma.
 
-## 🏅 Solução
+## 🏅 Solução <a id="solucao"></a>
 
 Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá que o usuário escolha funções de cálculo até optar por sair.
 
+---
 
 ## 📋 Backlog do Produto <a id="backlog"></a>
 
@@ -47,16 +48,15 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
 
 ## 🏃‍ DoR - Definition of Ready <a id="dor"></a>
 
-* User Stories com **Critérios de Aceitação**
-* Subtarefas divididas **a partir das US**
-* Ferramenta de Organização **Trello**
-
+- [x] Histórias bem descritas e comprrensíveis
+- [x] Time entende o objetivo e a complexidade
+- [x] Prioridades definidas
+- [x] Requisitos ranqueados
 
 ## 🏆 DoD - Definition of Done <a id="dod"></a>
-
-* Manual de Usuário
-* Documentação da API (Application Programming Interface)
-* Requisitos - 1.Quadrados Perfeitos; 2.Fatorial, 3.Sequência Fibonacci
+- [ ] Código final escrito e funcional
+- [ ] Code review aprovado
+- [ ] Documentação finalizada
 
 ---
 
@@ -64,9 +64,9 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
 
 | Sprint          |    Período    | Documentação    |
 | --------------- | :-----------: | --------------- |
-| 🔖 **SPRINT 1** | 08/09 - 28/09 | [Sprint 1 Docs] |
-| 🔖 **SPRINT 2** | 06/10 - 26/10 | [Sprint 2 Docs] |
-| 🔖 **SPRINT 3** | 03/11 - 23/11 | [Sprint 3 Docs] |
+| 🔖 **SPRINT 1** | 08/09 - 28/09 | [Sprint 1 Docs](Sprints/Sprint1) |
+| 🔖 **SPRINT 2** | 06/10 - 26/10 | [Sprint 2 Docs](Sprint/Sprints2) |
+| 🔖 **SPRINT 3** | 03/11 - 23/11 | [Sprint 3 Docs](Sprints/Sprint3) |
 
 ---
 
@@ -77,11 +77,20 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
       <a href="https://github.com/"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/></a>
 </h4>
 
+---
+
 ## 📖 Manual de Instalação <a id="manual"></a>
 
 ### 🛠 Pré-requisitos
+**Instalar o programa <a href="https://sourceforge.net/projects/visualg30/">VisualG</a>**
 
-- VisualG([Download](https://sourceforge.net/projects/visualg30/))
+### ⬇️ Clonar repositório
+```bash
+git clone https://github.com/projetos-BD-fatec/API_BD_1SEMESTE_2025.2.git
+```
+### 📂 Abrir arquivo
+<img src="https://computerlanguagesite.wordpress.com/wp-content/uploads/2025/02/iconalg.jpg?w=181" alt="visualG" width="30" align="Center"> CALCULADORA.ALG
+> Executar o programa
 
 ---
 
