@@ -6,8 +6,8 @@ Algoritmo "calculadora"
 // Data atual  : 15/09/2025
 Var
    // Seção de Declarações das variáveis
-   opcao, num_inicio, num_fim, i, quadrado, cont, Valor1, Valor2, limite, numero, resultado ,proximo:inteiro
-
+   opcao,qntdtermos, i, num_inicio, num_fim, i, quadrado, cont, Valor1, Valor2, limite, numero, resultado ,proximo:inteiro
+termo, razao, resultado : real
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
    enquanto opcao <>6 faca
@@ -107,6 +107,38 @@ Inicio
       fimse
       se opcao =4 entao
          escreval ("Você escolheu a opção 04 - Sequencia Geométrica")
+escreval("Digite o termo inicial:")
+   leia(termo)
+ 
+ 
+   repita
+      escreval("Digite a razão:")
+      leia(razao)
+      se (razao = 0) ou (razao = 1) ou (razao = -1) entao
+         escreval("Razão inválida! Digite novamente um valor diferente de 0, 1 e -1.")
+      fimse
+   ate (razao <> 0) e (razao <> 1) e (razao <> -1)
+ 
+ 
+   repita
+      escreval("Digite a quantidade de termos:")
+      leia(qntdtermos)
+      se (qntdtermos <= 0) entao
+         escreval("Quantidade inválida! Digite um número maior que zero.")
+      fimse
+   ate (qntdtermos > 0)
+
+ 
+   resultado <- termo
+
+ 
+   limpatela
+   escreval("=== Sequência Geométrica ===")
+ 
+   para i de 1 ate qntdtermos faca
+      escreval("Termo ", i, ": ", resultado)
+      resultado <- resultado * razao
+   fimpara
       fimse
       se opcao =5 entao
          escreval ("Você escolheu a opção 05 - Sequência Alternada")
@@ -116,6 +148,7 @@ Inicio
       fimse
    fimenquanto
 Fimalgoritmo
+
 
 
 
