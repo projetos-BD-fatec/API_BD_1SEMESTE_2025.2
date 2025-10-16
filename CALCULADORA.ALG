@@ -6,11 +6,11 @@ Algoritmo "calculadora"
 // Data atual  : 15/09/2025
 Var
    // Seção de Declarações das variáveis
-   opcao,qntdtermos, num_inicio, num_fim, termos, i, quadrado, cont, Valor1, Valor2, limite, numero, proximo:inteiro
+   opcao,qntdtermos, num_inicio, num_fim, termos, i, quadrado, cont, Valor1, Valor2, limite, numero, proximo, num1, num2, cont_div, j:inteiro
    resultado, termo, razao :real
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
-   enquanto opcao <>6 faca
+   enquanto opcao <>10 faca
       escreval ("")
       escreval ("------MENU CALCULADORA-------")
       escreval ("")
@@ -19,7 +19,11 @@ Inicio
       escreval (" 03 - Fibonacci")
       escreval (" 04 - Sequência Geométrica")
       escreval (" 05 - Sequência Alternada")
-      escreval (" 06 - Sair")
+      escreval (" 06 - Números Primos")
+      escreval (" 07 - Tribonacci")
+      escreval (" 08 - Sequência Triangular")
+      escreval (" 09 - Sequência de Cubos")
+      escreval (" 10 - SAIR")
       escreval ("")
       Escreval ("-----------------------------")
       leia (opcao)
@@ -157,11 +161,64 @@ Inicio
             Valor1 <- Valor1*-1
          fimpara
       fimse
+
       se opcao =6 entao
-         escreval ("Você escolheu a opção 06 - SAIR")
+         escreval ("Você escolheu a opção 06 - Números Primos")
+         repita
+            escreval ("Digite o primeiro número (inteiro e positivo): ")
+            leia (num1)
+            se (num1 < 0) então
+               escreval ("O primeiro número deve ser positivo!")
+            fimse
+         até (num1 > 0)
+         repita
+            escreval ("Digite o segundo número (deve ser maior que o primeiro): ")
+            leia (num2)
+            se (num2 < num1) então
+               escreval ("O segundo número deve ser maior que o primeiro!")
+            fimse
+         até (num2 > num1) e (num1 > 0)
+         limpatela
+         escreval ("Os números primos entre", num1, " e", num2, ":" )
+
+         para i de num1 até num2 faça
+            cont_div <- 0
+            para j de 1 até i faça
+               se i mod j = 0 então
+                  cont_div <- cont_div + 1
+               fimse
+            fimpara
+            se cont_div = 2 então
+               cont <- cont + 1
+               escreval (i)
+            fimse
+         fimpara
+         se cont = 0 então
+            escreval ("Não há números primos no período determinado")
+         fimse
+         cont <- 0
+      fimse
+      se opcao =7 entao
+         escreval ("Você escolheu a opção 07 - Tribonacci")
+         escreval ("Opção ainda em desenvolvimento")
+      fimse
+
+      se opcao =8 entao
+         escreval ("Você escolheu a opção 08 - Sequência Triangular")
+         escreval ("Opção ainda em desenvolvimento")
+      fimse
+
+      se opcao =9 entao
+         escreval ("Você escolheu a opção 09 - Sequência de Cubos")
+         escreval ("Opção ainda em desenvolvimento")
+      fimse
+
+      se opcao =10 entao
+         escreval ("Você escolheu a opção 10 - SAIR")
       fimse
    fimenquanto
 Fimalgoritmo
+
 
 
 
