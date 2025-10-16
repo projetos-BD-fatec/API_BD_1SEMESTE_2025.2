@@ -7,7 +7,7 @@ Algoritmo "calculadora"
 Var
    // Seção de Declarações das variáveis
    opcao,qntdtermos, num_inicio, num_fim, termos, i, quadrado, cont, Valor1, Valor2, limite, numero, proximo:inteiro
-   resultado, termo, razao, :real
+   resultado, termo, razao :real
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
    enquanto opcao <>6 faca
@@ -162,6 +162,7 @@ Inicio
       fimse
    fimenquanto
 Fimalgoritmo
+
 
 
 
