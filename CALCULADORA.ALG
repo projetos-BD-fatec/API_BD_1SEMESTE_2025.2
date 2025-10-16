@@ -6,8 +6,8 @@ Algoritmo "calculadora"
 // Data atual  : 15/09/2025
 Var
    // Seção de Declarações das variáveis
-   opcao,qntdtermos, i, num_inicio, num_fim, i, quadrado, cont, Valor1, Valor2, limite, numero, resultado ,proximo:inteiro
-termo, razao, resultado : real
+   opcao,qntdtermos, num_inicio, num_fim, termos, i, quadrado, cont, Valor1, Valor2, limite, numero, proximo:inteiro
+   resultado, termo, razao, :real
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
    enquanto opcao <>6 faca
@@ -107,48 +107,61 @@ Inicio
       fimse
       se opcao =4 entao
          escreval ("Você escolheu a opção 04 - Sequencia Geométrica")
-escreval("Digite o termo inicial:")
-   leia(termo)
- 
- 
-   repita
-      escreval("Digite a razão:")
-      leia(razao)
-      se (razao = 0) ou (razao = 1) ou (razao = -1) entao
-         escreval("Razão inválida! Digite novamente um valor diferente de 0, 1 e -1.")
-      fimse
-   ate (razao <> 0) e (razao <> 1) e (razao <> -1)
- 
- 
-   repita
-      escreval("Digite a quantidade de termos:")
-      leia(qntdtermos)
-      se (qntdtermos <= 0) entao
-         escreval("Quantidade inválida! Digite um número maior que zero.")
-      fimse
-   ate (qntdtermos > 0)
+         escreval("Digite o termo inicial:")
+         leia(termo)
 
- 
-   resultado <- termo
 
- 
-   limpatela
-   escreval("=== Sequência Geométrica ===")
- 
-   para i de 1 ate qntdtermos faca
-      escreval("Termo ", i, ": ", resultado)
-      resultado <- resultado * razao
-   fimpara
+         repita
+            escreval("Digite a razão:")
+            leia(razao)
+            se (razao = 0) ou (razao = 1) ou (razao = -1) entao
+               escreval("Razão inválida! Digite novamente um valor diferente de 0, 1 e -1.")
+            fimse
+         ate (razao <> 0) e (razao <> 1) e (razao <> -1)
+
+
+         repita
+            escreval("Digite a quantidade de termos:")
+            leia(qntdtermos)
+            se (qntdtermos <= 0) entao
+               escreval("Quantidade inválida! Digite um número maior que zero.")
+            fimse
+         ate (qntdtermos > 0)
+
+         resultado <- termo
+
+         limpatela
+         escreval("=== Sequência Geométrica ===")
+
+         para i de 1 ate qntdtermos faca
+            escreval("Termo ", i, ": ", resultado)
+            resultado <- resultado * razao
+         fimpara
       fimse
       se opcao =5 entao
-         escreval ("Você escolheu a opção 05 - Sequência Alternada")
+         escreval("Bem vindo ao cálculo da sequência alternada.")
+         escreval("Digite um número inicial e a quantidade de termos:")
+         repita
+            escreval("Digite o primeiro valor:")
+            leia(Valor1)
+            escreval("Digite quantos termos:")
+            leia(termos)
+            se (termos <= 0) ou (Valor1 <= 0) entao
+               limpatela
+               escreval("O valor inicial ou quantidade de termos não podem ser negativos!")
+            fimse
+         até (Valor1 > 0) e (termos > 0)
+         para i de 1 ate termos faca
+            escreval(valor1)
+            Valor1 <- Valor1*2
+            Valor1 <- Valor1*-1
+         fimpara
       fimse
       se opcao =6 entao
          escreval ("Você escolheu a opção 06 - SAIR")
       fimse
    fimenquanto
 Fimalgoritmo
-
 
 
 
