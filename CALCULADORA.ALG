@@ -6,7 +6,7 @@ Algoritmo "calculadora"
 // Data atual  : 15/09/2025
 Var
    // Seção de Declarações das variáveis
-   opcao,qntdtermos, num_inicio, num_fim, termos, i, quadrado, cont, Valor1, Valor2, limite, numero, proximo, num1, num2, cont_div, j:inteiro
+   opcao, x, qntdtermos, num_inicio, num_fim, termos, i, quadrado, cont, Valor1, Valor2, limite, numero, proximo, num1, num2, cont_div, j:inteiro
    resultado, termo, razao :real
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
@@ -26,9 +26,15 @@ Inicio
       escreval (" 10 - SAIR")
       escreval ("")
       Escreval ("-----------------------------")
+
+      escreval ("Digite a opção: ")
       leia (opcao)
-      limpatela
-      se opcao =1 entao
+      escolha opcao
+         limpatela
+
+         //inicio da opcao 01 do Menu
+      caso 1
+         limpatela
          escreval ("Você escolheu a opção 01 - Quadrados Perfeitos")
          repita
             escreval ("Digite o primeiro número (deve ser positivo): ")
@@ -52,8 +58,13 @@ Inicio
          fimse
          quadrado <- 0
          cont <- 0
-      fimse
-      se opcao =2 entao
+         escreval ("Tecle <enter> para voltar ao menu")
+         leia (x)
+         limpatela
+
+         //inicio da opcao 02 do menu
+      caso 2
+         limpatela
          escreval ("Você escolheu a opção 02 - Fatorial")
          escreval ("Digite um numero inteiro para calcular o fatorial")
          leia (numero)
@@ -78,8 +89,14 @@ Inicio
          fimpara
 
          escreval ("O fatorial de ", numero ," é ", resultado)
-      fimse
-      se opcao =3 entao
+
+         escreval ("Tecle <enter> para voltar ao menu")
+         leia (x)
+         limpatela
+
+         //inicio da opcao 03 do Menu
+      caso 3
+         limpatela
          escreval("Bem vindo ao calculo de Fibonacci. Digite dois valores:")
          repita
             repita
@@ -108,8 +125,13 @@ Inicio
                escreval ("")
             fimse
          até (Valor1 e Valor2) <> 0
-      fimse
-      se opcao =4 entao
+         escreval ("Tecle <enter> para voltar ao menu")
+         leia (x)
+         limpatela
+
+         //Inicio da opção 04 do Menu
+      caso 4
+         limpatela
          escreval ("Você escolheu a opção 04 - Sequencia Geométrica")
          escreval("Digite o termo inicial:")
          leia(termo)
@@ -141,8 +163,14 @@ Inicio
             escreval("Termo ", i, ": ", resultado)
             resultado <- resultado * razao
          fimpara
-      fimse
-      se opcao =5 entao
+
+         escreval ("Tecle <enter> para voltar ao menu")
+         leia (x)
+         limpatela
+
+         //Inicio da opção 05 do Menu
+      caso 5
+         limpatela
          escreval("Bem vindo ao cálculo da sequência alternada.")
          escreval("Digite um número inicial e a quantidade de termos:")
          repita
@@ -160,9 +188,14 @@ Inicio
             Valor1 <- Valor1*2
             Valor1 <- Valor1*-1
          fimpara
-      fimse
 
-      se opcao =6 entao
+         escreval ("Tecle <enter> para voltar ao menu")
+         leia (x)
+         limpatela
+
+         // Inicio da opção 06 do Menu
+      caso 6
+         limpatela
          escreval ("Você escolheu a opção 06 - Números Primos")
          repita
             escreval ("Digite o primeiro número (inteiro e positivo): ")
@@ -181,6 +214,7 @@ Inicio
          limpatela
          escreval ("Os números primos entre", num1, " e", num2, ":" )
 
+
          para i de num1 até num2 faça
             cont_div <- 0
             para j de 1 até i faça
@@ -193,31 +227,61 @@ Inicio
                escreval (i)
             fimse
          fimpara
+
+
          se cont = 0 então
             escreval ("Não há números primos no período determinado")
          fimse
          cont <- 0
-      fimse
-      se opcao =7 entao
+
+         escreval ("Tecle <enter> para voltar ao menu")
+         leia (x)
+         limpatela
+
+      caso 7
+         limpatela
          escreval ("Você escolheu a opção 07 - Tribonacci")
          escreval ("Opção ainda em desenvolvimento")
-      fimse
+         escreval ("")
+         escreval ("Tecle <enter> para voltar ao menu")
+         leia (x)
+         limpatela
 
-      se opcao =8 entao
+      caso 8
+         limpatela
          escreval ("Você escolheu a opção 08 - Sequência Triangular")
          escreval ("Opção ainda em desenvolvimento")
-      fimse
+         escreval ("")
+         escreval ("Tecle <enter> para voltar ao menu")
+         leia (x)
+         limpatela
 
-      se opcao =9 entao
+
+      caso 9
+         limpatela
          escreval ("Você escolheu a opção 09 - Sequência de Cubos")
          escreval ("Opção ainda em desenvolvimento")
-      fimse
+         escreval ("")
+         escreval ("Tecle <enter> para voltar ao menu")
+         leia (x)
+         limpatela
 
-      se opcao =10 entao
+
+      caso 10
          escreval ("Você escolheu a opção 10 - SAIR")
-      fimse
+         limpatela
+
+      outrocaso
+         limpatela
+         escreval ("Opção inválida!")
+         escreval ("Tecle <enter> para voltar ao menu")
+         leia (x)
+         limpatela
+      fimescolha
+
    fimenquanto
 Fimalgoritmo
+
 
 
 
