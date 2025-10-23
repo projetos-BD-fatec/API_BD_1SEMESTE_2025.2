@@ -32,7 +32,7 @@ Inicio
       escolha opcao
          limpatela
 
-         //inicio da opcao 01 do Menu
+//inicio da opcao 01 - Quadrados perfeitos
       caso 1
          limpatela
          escreval ("Você escolheu a opção 01 - Quadrados Perfeitos")
@@ -62,7 +62,7 @@ Inicio
          leia (x)
          limpatela
 
-         //inicio da opcao 02 do menu
+//inicio da opcao 02 - Fatorial
       caso 2
          limpatela
          escreval ("Você escolheu a opção 02 - Fatorial")
@@ -94,7 +94,7 @@ Inicio
          leia (x)
          limpatela
 
-         //inicio da opcao 03 do Menu
+//inicio da opcao 03 Sequência de Fibonacci
       caso 3
          limpatela
          escreval("Bem vindo ao calculo de Fibonacci. Digite dois valores:")
@@ -112,7 +112,7 @@ Inicio
                   escreval ("Valor limite tem que ser maior que os valores iniciais.")
                fimse
             até (num1 e num2) < limite
-            se (num1 e num2) = 0 entao
+            se (num1 = 0) e (num2 = 0) entao
                limpatela
                escreval("Você digitou 0 nos dois valores, isso da sequência infinita!")
             senao
@@ -131,7 +131,7 @@ Inicio
          leia (x)
          limpatela
 
-         //Inicio da opção 04 do Menu
+//Inicio da opção 04 - Sequência geométrica
       caso 4
          limpatela
          escreval ("Você escolheu a opção 04 - Sequencia Geométrica")
@@ -155,7 +155,7 @@ Inicio
             fimse
          ate (qnt_termos > 0)
 
-         //resultado <- termo
+
 
          limpatela
          escreval("=== Sequência Geométrica ===")
@@ -170,35 +170,35 @@ Inicio
          leia (x)
          limpatela
 
-         //Inicio da opção 05 do Menu
+//Inicio da opção 05 - Sequência alternada
       caso 5
          limpatela
          escreval("Bem vindo ao cálculo da sequência alternada.")
          escreval("Digite um número inicial e a quantidade de termos:")
          repita
             escreval("Digite o primeiro valor:")
-            leia(num1)
+            leia(termo)
             escreval("Digite quantos termos:")
             leia(qnt_termos)
-            se (qnt_termos <= 0) ou (num1 <= 0) entao
+            se (qnt_termos <= 0) ou (termo <= 0) entao
                limpatela
                escreval("O valor inicial ou quantidade de termos não podem ser negativos!")
             fimse
-         até (num1 > 0) e (qnt_termos > 0)
+         até (termo > 0) e (qnt_termos > 0)
 
          escreval ("A Sequência Alternada com os valores informados é: ")
 
          para i de 1 ate qnt_termos faca
-            escreval(num1)
-            num1 <- num1*2
-            num1 <- num1*-1
+            escreval(termo)
+            termo <- termo*2
+            termo <- termo*-1
          fimpara
 
          escreval ("Tecle <enter> para voltar ao menu")
          leia (x)
          limpatela
 
-         // Inicio da opção 06 do Menu
+// Inicio da opção 06 - Sequência de numeros primos
       caso 6
          limpatela
          escreval ("Você escolheu a opção 06 - Números Primos")
@@ -233,7 +233,6 @@ Inicio
             fimse
          fimpara
 
-
          se cont = 0 então
             escreval ("Não há números primos no período determinado")
          fimse
@@ -242,7 +241,7 @@ Inicio
          escreval ("Tecle <enter> para voltar ao menu")
          leia (x)
          limpatela
-
+// Inicio da opção 07 -  Sequência de tribonacci
       caso 7
          limpatela
          escreval ("Você escolheu a opção 07 - Tribonacci")
@@ -251,17 +250,17 @@ Inicio
          escreval ("Tecle <enter> para voltar ao menu")
          leia (x)
          limpatela
-
+//Inicio da opção 08 - Número triangular
       caso 8
          limpatela
-         escreval ("Você escolheu a opção 08 - Sequência Triangular")
+         escreval ("Você escolheu a opção 08 - Número Triangular")
          escreval ("Opção ainda em desenvolvimento")
          escreval ("")
          escreval ("Tecle <enter> para voltar ao menu")
          leia (x)
          limpatela
 
-
+ //Inicio da opção 09 - Sequência de cubos
       caso 9
          limpatela
          escreval ("Você escolheu a opção 09 - Sequência de Cubos")
@@ -271,11 +270,11 @@ Inicio
          leia (x)
          limpatela
 
-
+//Inicio da opção 10 - Sair do menu
       caso 10
          escreval ("Você escolheu a opção 10 - SAIR")
          limpatela
-
+//Caso de opção inválida
       outrocaso
          limpatela
          escreval ("Opção inválida!")
