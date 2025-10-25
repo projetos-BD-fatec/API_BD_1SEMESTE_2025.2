@@ -48,10 +48,10 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
 
 ## 🏃‍ DoR - Definition of Ready <a id="dor"></a>
 
-- [x] Histórias bem descritas e comprrensíveis
-- [x] Time entende o objetivo e a complexidade
-- [x] Prioridades definidas
-- [x] Requisitos ranqueados
+- [ ] Histórias bem descritas e comprrensíveis
+- [ ] Time entende o objetivo e a complexidade
+- [ ] Prioridades definidas
+- [ ] Requisitos ranqueados
 
 ## 🏆 DoD - Definition of Done <a id="dod"></a>
 - [ ] Código final escrito e funcional
