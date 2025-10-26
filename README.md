@@ -50,7 +50,7 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
 
 ---
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 
 ## 🏃‍ DoR - Definition of Ready <a id="dor"></a>
@@ -77,7 +77,7 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
 
 ---
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 
 ## 💻 Tecnologias <a id="tecnologias"></a>
@@ -104,7 +104,7 @@ git clone https://github.com/projetos-BD-fatec/API_BD_1SEMESTE_2025.2.git
 
 ---
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 
 ## 🎓 Equipe <a id="equipe"></a>
