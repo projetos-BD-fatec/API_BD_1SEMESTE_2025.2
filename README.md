@@ -20,6 +20,11 @@
   <a href ="#manual">Manual de Instalação</a>  | 
   <a href ="#equipe"> Equipe</a> |
 </p>
+
+> Status do Projeto: Sprint 2  🧑‍💻 
+>
+> Pasta de Documentação: [Link](Processo) 📄
+
   
 ## 🏅 O desafio <a id="desafio"></a>
 
