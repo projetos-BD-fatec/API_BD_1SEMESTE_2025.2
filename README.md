@@ -1,3 +1,7 @@
+
+<a id="readme-top"></a>
+
+
 # 👾 API 1º Semestre BD
 
 <p align="center">
@@ -46,6 +50,9 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
 
 ---
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 ## 🏃‍ DoR - Definition of Ready <a id="dor"></a>
 
 - [ ] Histórias bem descritas e comprrensíveis
@@ -70,6 +77,9 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
 
 ---
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 ## 💻 Tecnologias <a id="tecnologias"></a>
 
 <h4 align="center">
@@ -93,6 +103,9 @@ git clone https://github.com/projetos-BD-fatec/API_BD_1SEMESTE_2025.2.git
 > Executar o programa
 
 ---
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 🎓 Equipe <a id="equipe"></a>
 
