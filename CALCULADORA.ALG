@@ -244,6 +244,38 @@ Inicio
 // Inicio da opção 07 -  Sequência de tribonacci
     caso 7
 limpatela
+ escreval("Bem vindo ao calculo de Tribonacci. Digite três valores:")
+   repita
+      repita
+         escreval("Digite o primeiro valor:")
+         leia(num1)
+         escreval("Digite o segundo valor:")
+         leia(num2)
+         escreval("Digite o terceiro valor:")
+         leia(num3)
+         escreval("Digite o limite:")
+         leia(limite)
+
+         se (limite < num1) ou (limite < num2) ou (limite < num3)entao
+            limpatela
+            escreval ("Valor limite tem que ser maior que os valores iniciais.")
+         fimse
+      até (num1 e num2 e num3) < limite
+      se (num1 = 0) e (num2 = 0) e (num3 = 0) entao
+         limpatela
+         escreval("Você digitou 0 nos três valores, isso da sequência infinita!")
+      senao
+         escreval ("A sequência Tribonacci com os valores informados é: ")
+         enquanto num1 <= limite faca
+            escreva(num1)
+            proximo <- num1 + num2 + num3
+            num1 <- num2
+            num2 <- num3
+            num3 <- proximo
+         fimenquanto
+         escreval ("")
+      fimse
+   até (num1 e num2 e num3) <> 0
          escreval ("Tecle <enter> para voltar ao menu")
          leia (voltar)
          limpatela
@@ -330,4 +362,5 @@ limpatela
 
    fimenquanto
 Fimalgoritmo
+
 
