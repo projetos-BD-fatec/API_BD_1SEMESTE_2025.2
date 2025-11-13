@@ -6,7 +6,7 @@ Algoritmo "calculadora"
 // Data atual  : 15/09/2025
 Var
    // Seção de Declarações das variáveis
-   opcao, x, qnt_termos, i, quadrado, cont, fatorial, limite, proximo, num1, num2, cont_div, j:inteiro
+   opcao, x, qnt_termos, i, quadrado, cont, fatorial, limite, proximo, num1, num2, num3, cont_div, j:inteiro
    termo, razao :real
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
@@ -242,11 +242,8 @@ Inicio
          leia (x)
          limpatela
 // Inicio da opção 07 -  Sequência de tribonacci
-      caso 7
-         limpatela
-         escreval ("Você escolheu a opção 07 - Tribonacci")
-         escreval ("Opção ainda em desenvolvimento")
-         escreval ("")
+    caso 7
+limpatela 
          escreval ("Tecle <enter> para voltar ao menu")
          leia (x)
          limpatela
@@ -285,3 +282,4 @@ Inicio
 
    fimenquanto
 Fimalgoritmo
+
