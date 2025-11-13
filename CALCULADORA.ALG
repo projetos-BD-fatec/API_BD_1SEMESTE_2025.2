@@ -6,7 +6,7 @@ Algoritmo "calculadora"
 // Data atual  : 15/09/2025
 Var
    // Seção de Declarações das variáveis
-   opcao, x, qnt_termos, i, quadrado, cont, fatorial, limite, proximo, num1, num2, num3, cont_div, j:inteiro
+   opcao, voltar, qnt_termos, i, quadrado, cont, fatorial, limite, proximo, num1, num2, num3, cont_div, j, cubo:inteiro
    termo, razao :real
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
@@ -59,7 +59,7 @@ Inicio
          quadrado <- 0
          cont <- 0
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 
 //inicio da opcao 02 - Fatorial
@@ -91,7 +91,7 @@ Inicio
          escreval ("O fatorial de", num1 ," é", fatorial)
 
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 
 //inicio da opcao 03 Sequência de Fibonacci
@@ -128,7 +128,7 @@ Inicio
          até (num1 e num2) <> 0
 
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 
 //Inicio da opção 04 - Sequência geométrica
@@ -162,12 +162,12 @@ Inicio
 
          para i de 1 ate qnt_termos faca
             escreval("Termo ", i, ": ", termo)
-               //resultado <- resultado * razao
+
                termo <- termo * razao
          fimpara
 
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 
 //Inicio da opção 05 - Sequência alternada
@@ -195,7 +195,7 @@ Inicio
          fimpara
 
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 
 // Inicio da opção 06 - Sequência de numeros primos
@@ -239,13 +239,13 @@ Inicio
          cont <- 0
 
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 // Inicio da opção 07 -  Sequência de tribonacci
     caso 7
-limpatela 
+limpatela
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 //Inicio da opção 08 - Número triangular
       caso 8
@@ -254,17 +254,47 @@ limpatela
          escreval ("Opção ainda em desenvolvimento")
          escreval ("")
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 
  //Inicio da opção 09 - Sequência de cubos
       caso 9
          limpatela
          escreval ("Você escolheu a opção 09 - Sequência de Cubos")
-         escreval ("Opção ainda em desenvolvimento")
+
+          repita
+      escreval("Digite o primeiro número (deve ser maior que 0): ")
+      leia (num1)
+      escreval ("Digite o segundo número (deve ser maior que o primeiro): ")
+      leia (num2)
+   até (num2 > num1) e (num1 > 0)
+
+   escreval ("")
+   escreval ("Cubos dentro do intervalo determinado (",num1, " e", num2, "): ")
+   escreval ("")
+
+   enquanto (cubo <= num2) faça
+      para i de 1 até num2 faça
+      cubo <- i * i * i
+
+         se (cubo <= num2) e (cubo >= num1) então
+            escreval (i, " *", i, " *", i, " =", cubo)
+            cont <- cont + 1
+         fimse
+
+      fimpara
+   fimenquanto
+
+   cubo <- 0
+
+   se (cont = 0) então
+      escreval ("Zero. Não há cubos no intervalo informado")
+   fimse
+   cont <- 0
+
          escreval ("")
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 
 //Inicio da opção 10 - Sair do menu
@@ -276,10 +306,9 @@ limpatela
          limpatela
          escreval ("Opção inválida!")
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
       fimescolha
 
    fimenquanto
 Fimalgoritmo
-
