@@ -251,8 +251,26 @@ limpatela
       caso 8
          limpatela
          escreval ("Você escolheu a opção 08 - Número Triangular")
-         escreval ("Opção ainda em desenvolvimento")
-         escreval ("")
+         repita
+      repita
+         limpatela
+         Escreval("Digite o primeiro número do intervalo:")
+         leia(itv1)
+         Escreval("Digite o número máximo do intervalo:")
+         leia(itv2)
+      ate itv2 > itv1
+      limpatela
+
+      se (itv1 < 0) e (itv2 < 0) entao
+         escreval("Intervalo inválido! Digite um número inteiro e positivo")
+      fimse
+   ate (itv1 > 0) e (itv2 > 0)
+   para i de itv1 ate itv2 faça
+
+      numtg <- i * (i + 1) / 2
+
+      Escreval("O ", i, "° número da sequencia triangular é ", numtg)
+   fimpara
          escreval ("Tecle <enter> para voltar ao menu")
          leia (voltar)
          limpatela
@@ -312,3 +330,4 @@ limpatela
 
    fimenquanto
 Fimalgoritmo
+
