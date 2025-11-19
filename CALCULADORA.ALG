@@ -13,18 +13,18 @@ Inicio
    enquanto opcao <>10 faca
       escreval ("")
       escreval ("------MENU CALCULADORA-------")
-      escreval ("")
-      escreval (" 01 - Quadrados Perfeitos ")
-      escreval (" 02 - Fatorial ")
-      escreval (" 03 - Fibonacci")
-      escreval (" 04 - Sequência Geométrica")
-      escreval (" 05 - Sequência Alternada")
-      escreval (" 06 - Números Primos")
-      escreval (" 07 - Tribonacci")
-      escreval (" 08 - Sequência Triangular")
-      escreval (" 09 - Sequência de Cubos")
-      escreval (" 10 - SAIR")
-      escreval ("")
+      escreval ("                             |")
+      escreval (" 01 - Quadrados Perfeitos    |")
+      escreval (" 02 - Fatorial               |")
+      escreval (" 03 - Fibonacci              |")
+      escreval (" 04 - Sequência Geométrica   |")
+      escreval (" 05 - Sequência Alternada    |")
+      escreval (" 06 - Números Primos         |")
+      escreval (" 07 - Tribonacci             |")
+      escreval (" 08 - Sequência Triangular   |")
+      escreval (" 09 - Sequência de Cubos     |")
+      escreval (" 10 - SAIR                   |")
+      escreval ("                             |")
       Escreval ("-----------------------------")
 
       escreval ("Digite a opção: ")
@@ -35,7 +35,12 @@ Inicio
 //inicio da opcao 01 - Quadrados perfeitos
       caso 1
          limpatela
-         escreval ("Você escolheu a opção 01 - Quadrados Perfeitos")
+         escreval ("----------QUADRADOS PERFEITOS-----------")
+         escreval("Para este cálculo você deve inserir")
+         escreval("o número inicial e final.")
+         escreval("E então será retornado um período entre os dois números.")
+         escreval ("----------------------------------------")
+         escreval("")
          repita
             escreval ("Digite o primeiro número (deve ser positivo): ")
             leia (num1)
@@ -43,7 +48,7 @@ Inicio
             leia (num2)
          até (num2 > num1)
          limpatela
-         escreval ("Quadrados perfeitos dentro do período",num1," e",num2,": ")
+         escreval ("Quadrados perfeitos dentro do período de",num1," a",num2,": ")
          enquanto (quadrado <= num2) faça
             para i <- 1 até num2 faça
                quadrado <- i * i
@@ -65,7 +70,12 @@ Inicio
 //inicio da opcao 02 - Fatorial
       caso 2
          limpatela
-         escreval ("Você escolheu a opção 02 - Fatorial")
+         escreval ("----------------FATORIAL----------------")
+         escreval("Para este cálculo você deve inserir qual")
+         escreval("número que deseja calcular o fatorial.")
+         escreval("E então será retornado o fatorial deste número.")
+         escreval ("----------------------------------------")
+         escreval("")
          escreval ("Digite um numero inteiro para calcular o fatorial")
          leia (num1)
          limpatela
@@ -97,7 +107,12 @@ Inicio
 //inicio da opcao 03 Sequência de Fibonacci
       caso 3
          limpatela
-         escreval("Bem vindo ao calculo de Fibonacci. Digite dois valores:")
+         escreval ("----------------FIBONACCI----------------")
+         escreval("Para este cálculo você deve inserir os dois")
+         escreval("primeiros número da sequência e o valor limite.")
+         escreval("E então será retornado a sequência fibonacci")
+         escreval ("----------------------------------------")
+         escreval("")
          repita
             repita
                escreval("Digite o primeiro valor:")
@@ -134,7 +149,13 @@ Inicio
 //Inicio da opção 04 - Sequência geométrica
       caso 4
          limpatela
-         escreval ("Você escolheu a opção 04 - Sequencia Geométrica")
+         escreval ("----------SEQUÊNCIA GEOMÉTRICA---------")
+         escreval("Para este cálculo você deve inserir o termo")
+         escreval("inicial, a razão (multiplicador) e a")
+         escreval("quantidade de termos desejada.")
+         escreval("E então será retornado a sequência geométrica")
+         escreval ("----------------------------------------")
+         escreval("")
          escreval("Digite o termo inicial:")
          leia(termo)
 
@@ -158,7 +179,7 @@ Inicio
 
 
          limpatela
-         escreval("=== Sequência Geométrica ===")
+         escreval("A sequência geométrica com os valores informados é:")
 
          para i de 1 ate qnt_termos faca
             escreval("Termo ", i, ": ", termo)
@@ -362,5 +383,4 @@ limpatela
 
    fimenquanto
 Fimalgoritmo
-
 
