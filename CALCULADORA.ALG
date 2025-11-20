@@ -38,7 +38,8 @@ Inicio
          escreval ("----------QUADRADOS PERFEITOS-----------")
          escreval("Para este cálculo você deve inserir")
          escreval("o número inicial e final.")
-         escreval("E então será retornado um período entre os dois números.")
+         escreval("E então será retornado os quadrados perfeitos")
+         escreval("dentro do período entre os dois números.")
          escreval ("----------------------------------------")
          escreval("")
          repita
@@ -110,7 +111,7 @@ Inicio
          escreval ("----------------FIBONACCI----------------")
          escreval("Para este cálculo você deve inserir os dois")
          escreval("primeiros número da sequência e o valor limite.")
-         escreval("E então será retornado a sequência fibonacci")
+         escreval("E então será retornado a sequência Fibonacci")
          escreval ("----------------------------------------")
          escreval("")
          repita
@@ -383,4 +384,5 @@ limpatela
 
    fimenquanto
 Fimalgoritmo
+
 
