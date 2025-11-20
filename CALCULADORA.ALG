@@ -72,9 +72,8 @@ Inicio
       caso 2
          limpatela
          escreval ("----------------FATORIAL----------------")
-         escreval("Para este cálculo você deve inserir qual")
-         escreval("número que deseja calcular o fatorial.")
-         escreval("E então será retornado o fatorial deste número.")
+         escreval("O fatorial de um número é a multiplicação desse número")
+         escreval("por todos os seus antecessores inteiros e positivos até 1")
          escreval ("----------------------------------------")
          escreval("")
          escreval ("Digite um numero inteiro para calcular o fatorial")
@@ -151,10 +150,10 @@ Inicio
       caso 4
          limpatela
          escreval ("----------SEQUÊNCIA GEOMÉTRICA---------")
-         escreval("Para este cálculo você deve inserir o termo")
-         escreval("inicial, a razão (multiplicador) e a")
-         escreval("quantidade de termos desejada.")
-         escreval("E então será retornado a sequência geométrica")
+         escreval("A sequência geométrica é uma lista de números")
+         escreval("onde cada termo, exceto o primeiro, é obtido")
+         escreval("multiplicando o termo anterior por um número")
+         escreval("fixo constante chamado razão")
          escreval ("----------------------------------------")
          escreval("")
          escreval("Digite o termo inicial:")
@@ -384,5 +383,6 @@ limpatela
 
    fimenquanto
 Fimalgoritmo
+
 
 
