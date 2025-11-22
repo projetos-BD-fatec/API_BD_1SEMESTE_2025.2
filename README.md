@@ -49,9 +49,9 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
 |   5  |    Média   | Como usuário, quero calcular uma sequência geométrica, podendo definir o valor inicial, final e o valor da razão, que podem ser positivos ou negativos, desde que sejam diferentes de -1, 0 e 1. | 2 | ✅ |
 |   6  |    Média   | Como usuário, quero que implemente uma opção que me dê uma sequência alternada, em que eu defina o valor inicial, a quantia de termos e que o número dobre a cada termo. | 2 | ✅ |
 |   7  |    Média   | Como usuário, quero que implemente uma opção que calcule quais os números primos dentro de um intervalo (inteiro e positivo) que eu definir. | 2 | ✅ |
-|   8  |    Baixa   | Como usuário, quero que implemente a opção de calcular a sequência de Tribonacci, onde eu insira os três valores iniciais e o valor limite. | 3 |   |
-|  9   |    Baixa   | Como usuário, quero que implemente a opção de calcular qual o número triangular do valor (inteiro e positivo) que eu definir. | 3 |   |
-|  10  |    Baixa   | Como usuário, quero que implemente uma opção que calcule uma sequencia de cubos dentro de um intervalo (inteiro e positivo) que eu definir. | 3 |   |
+|   8  |    Baixa   | Como usuário, quero que implemente a opção de calcular a sequência de Tribonacci, onde eu insira os três valores iniciais e o valor limite. | 3 | ✅ |
+|  9   |    Baixa   | Como usuário, quero que implemente a opção de calcular qual o número triangular do valor (inteiro e positivo) que eu definir. | 3 | ✅ |
+|  10  |    Baixa   | Como usuário, quero que implemente uma opção que calcule uma sequencia de cubos dentro de um intervalo (inteiro e positivo) que eu definir. | 3 | ✅ |
 
 ---
 
