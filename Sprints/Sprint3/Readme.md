@@ -17,7 +17,8 @@
 -  [x] Código escrito e funcional
 -  [x] Revisões e testes feitos
 -  [x] Documentação atualizada
--  [x] Code review aprovado
+-  [ ] Code review aprovado
+
 
 
 
