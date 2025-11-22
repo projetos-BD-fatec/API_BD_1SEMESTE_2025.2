@@ -7,7 +7,7 @@ Algoritmo "calculadora"
 Var
    // Seção de Declarações das variáveis
    opcao, voltar, qnt_termos, i, quadrado, cont, fatorial, limite, proximo, num1, num2, num3, cont_div, j, cubo:inteiro
-   termo, razao :real
+   termo, razao: real
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
    enquanto opcao <>10 faca
@@ -32,14 +32,13 @@ Inicio
       escolha opcao
          limpatela
 
-//inicio da opcao 01 - Quadrados perfeitos
+         //inicio da opcao 01 - Quadrados perfeitos
       caso 1
          limpatela
          escreval ("----------QUADRADOS PERFEITOS-----------")
-         escreval("Para este cálculo você deve inserir")
-         escreval("o número inicial e final.")
-         escreval("E então será retornado os quadrados perfeitos")
-         escreval("dentro do período entre os dois números.")
+         escreval("Um quadrado perfeito é um número natural")
+         escreval("que é o resultado da multiplicação de um número")
+         escreval("inteiro por ele mesmo (elevado ao quadrado)")
          escreval ("----------------------------------------")
          escreval("")
          repita
@@ -68,7 +67,7 @@ Inicio
          leia (voltar)
          limpatela
 
-//inicio da opcao 02 - Fatorial
+         //inicio da opcao 02 - Fatorial
       caso 2
          limpatela
          escreval ("----------------FATORIAL----------------")
@@ -104,12 +103,12 @@ Inicio
          leia (voltar)
          limpatela
 
-//inicio da opcao 03 Sequência de Fibonacci
+         //inicio da opcao 03 Sequência de Fibonacci
       caso 3
          limpatela
          escreval ("----------------FIBONACCI----------------")
          escreval("Para este cálculo você deve inserir os dois")
-         escreval("primeiros número da sequência e o valor limite.")
+         escreval("primeiros números da sequência e o valor limite.")
          escreval("E então será retornado a sequência Fibonacci")
          escreval ("----------------------------------------")
          escreval("")
@@ -146,7 +145,7 @@ Inicio
          leia (voltar)
          limpatela
 
-//Inicio da opção 04 - Sequência geométrica
+         //Inicio da opção 04 - Sequência geométrica
       caso 4
          limpatela
          escreval ("----------SEQUÊNCIA GEOMÉTRICA---------")
@@ -184,17 +183,22 @@ Inicio
          para i de 1 ate qnt_termos faca
             escreval("Termo ", i, ": ", termo)
 
-               termo <- termo * razao
+            termo <- termo * razao
          fimpara
 
          escreval ("Tecle <enter> para voltar ao menu")
          leia (voltar)
          limpatela
 
-//Inicio da opção 05 - Sequência alternada
+         //Inicio da opção 05 - Sequência alternada
       caso 5
          limpatela
-         escreval("Bem vindo ao cálculo da sequência alternada.")
+         escreval("---------- SEQUÊNCIA ALTERNADA ---------")
+         escreval("Uma sequência alternada é uma série numérica")
+         escreval("cujos termos se alternam entre positivos e negativos")
+         escreval("----------------------------------------")
+         escreval("")
+
          escreval("Digite um número inicial e a quantidade de termos:")
          repita
             escreval("Digite o primeiro valor:")
@@ -219,10 +223,16 @@ Inicio
          leia (voltar)
          limpatela
 
-// Inicio da opção 06 - Sequência de numeros primos
+         // Inicio da opção 06 - Sequência de numeros primos
       caso 6
          limpatela
-         escreval ("Você escolheu a opção 06 - Números Primos")
+         escreval ("----------NÚMEROS PRIMOS---------")
+         escreval ("Um número primo é um número natural")
+         escreval ("maior que 1 que tem apenas dois divisores")
+         escreval ("positivos: 1 e ele mesmo.")
+         escreval ("---------------------------------")
+         escreval ("")
+
          repita
             escreval ("Digite o primeiro número (inteiro e positivo): ")
             leia (num1)
@@ -262,117 +272,133 @@ Inicio
          escreval ("Tecle <enter> para voltar ao menu")
          leia (voltar)
          limpatela
-// Inicio da opção 07 -  Sequência de tribonacci
-    caso 7
-limpatela
- escreval("Bem vindo ao calculo de Tribonacci. Digite três valores:")
-   repita
-      repita
-         escreval("Digite o primeiro valor:")
-         leia(num1)
-         escreval("Digite o segundo valor:")
-         leia(num2)
-         escreval("Digite o terceiro valor:")
-         leia(num3)
-         escreval("Digite o limite:")
-         leia(limite)
-
-         se (limite < num1) ou (limite < num2) ou (limite < num3)entao
-            limpatela
-            escreval ("Valor limite tem que ser maior que os valores iniciais.")
-         fimse
-      até (num1 e num2 e num3) < limite
-      se (num1 = 0) e (num2 = 0) e (num3 = 0) entao
+         // Inicio da opção 07 -  Sequência de tribonacci
+      caso 7
          limpatela
-         escreval("Você digitou 0 nos três valores, isso da sequência infinita!")
-      senao
-         escreval ("A sequência Tribonacci com os valores informados é: ")
-         enquanto num1 <= limite faca
-            escreva(num1)
-            proximo <- num1 + num2 + num3
-            num1 <- num2
-            num2 <- num3
-            num3 <- proximo
-         fimenquanto
-         escreval ("")
-      fimse
-   até (num1 e num2 e num3) <> 0
+         escreval("----------SEQUÊNCIA TRIBONACCI---------")
+         escreval("A sequência de Tribonacci é uma progressão numérica")
+         escreval("em que cada termo, a partir do quarto,")
+         escreval("é a soma dos três termos imediatamente anteriores")
+         escreval("---------------------------------------")
+         escreval("")
+
+         repita
+            repita
+               escreval("Digite o primeiro valor:")
+               leia(num1)
+               escreval("Digite o segundo valor:")
+               leia(num2)
+               escreval("Digite o terceiro valor:")
+               leia(num3)
+               escreval("Digite o limite:")
+               leia(limite)
+
+               se (limite < num1) ou (limite < num2) ou (limite < num3)entao
+                  limpatela
+                  escreval ("Valor limite tem que ser maior que os valores iniciais.")
+               fimse
+            até (num1 e num2 e num3) < limite
+            se (num1 = 0) e (num2 = 0) e (num3 = 0) entao
+               limpatela
+               escreval("Você digitou 0 nos três valores, isso da sequência infinita!")
+            senao
+               escreval ("A sequência Tribonacci com os valores informados é: ")
+               enquanto num1 <= limite faca
+                  escreva(num1)
+                  proximo <- num1 + num2 + num3
+                  num1 <- num2
+                  num2 <- num3
+                  num3 <- proximo
+               fimenquanto
+               escreval ("")
+            fimse
+         até (num1 e num2 e num3) <> 0
          escreval ("Tecle <enter> para voltar ao menu")
          leia (voltar)
          limpatela
-//Inicio da opção 08 - Número triangular
+         //Inicio da opção 08 - Número triangular
       caso 8
          limpatela
-         escreval ("Você escolheu a opção 08 - Número Triangular")
+         escreval("----------NÚMERO TRIANGULAR---------")
+         escreval("Um número triangular é um número natural que pode")
+         escreval("ser representado pela soma dos primeiros n números naturais")
+         escreval("e visualizado na forma de um triângulo equilátero de pontos.")
+         escreval("------------------------------------")
+         escreval("")
          repita
-      repita
-         limpatela
-         Escreval("Digite o primeiro número do intervalo:")
-         leia(itv1)
-         Escreval("Digite o número máximo do intervalo:")
-         leia(itv2)
-      ate itv2 > itv1
-      limpatela
+            repita
 
-      se (itv1 < 0) e (itv2 < 0) entao
-         escreval("Intervalo inválido! Digite um número inteiro e positivo")
-      fimse
-   ate (itv1 > 0) e (itv2 > 0)
-   para i de itv1 ate itv2 faça
+               Escreval("Digite o primeiro número do intervalo:")
+               leia(num1)
+               Escreval("Digite o número máximo do intervalo:")
+               leia(num2)
+            ate num2 > num1
+            limpatela
 
-      numtg <- i * (i + 1) / 2
+            se (num1 < 0) e (num2 < 0) entao
+               escreval("Intervalo inválido! Digite um número inteiro e positivo")
+            fimse
+         ate (num1 > 0) e (num2 > 0)
+         para i de num1 ate num2 faça
 
-      Escreval("O ", i, "° número da sequencia triangular é ", numtg)
-   fimpara
+            termo <- i * (i + 1) / 2
+
+            Escreval("O ", i, "° número da sequencia triangular é ", num3)
+         fimpara
          escreval ("Tecle <enter> para voltar ao menu")
          leia (voltar)
          limpatela
 
- //Inicio da opção 09 - Sequência de cubos
+         //Inicio da opção 09 - Sequência de cubos
       caso 9
          limpatela
-         escreval ("Você escolheu a opção 09 - Sequência de Cubos")
+         escreval ("------------SEQUÊNCIA DE CUBOS----------")
+         escreval ("Uma sequência de cubos é uma progressão de números inteiros")
+         escreval ("que são o resultado da elevação de um número inteiro")
+         escreval ("ao cubo, ou seja, multiplicando o número")
+         escreval ("por ele mesmo três vezes consecutivas.")
+         escreval ("----------------------------------------")
+         escreval ("")
+         repita
+            escreval("Digite o primeiro número (deve ser maior que 0): ")
+            leia (num1)
+            escreval ("Digite o segundo número (deve ser maior que o primeiro): ")
+            leia (num2)
+         até (num2 > num1) e (num1 > 0)
 
-          repita
-      escreval("Digite o primeiro número (deve ser maior que 0): ")
-      leia (num1)
-      escreval ("Digite o segundo número (deve ser maior que o primeiro): ")
-      leia (num2)
-   até (num2 > num1) e (num1 > 0)
+         escreval ("")
+         escreval ("Cubos dentro do intervalo determinado (",num1, " e", num2, "): ")
+         escreval ("")
 
-   escreval ("")
-   escreval ("Cubos dentro do intervalo determinado (",num1, " e", num2, "): ")
-   escreval ("")
+         enquanto (cubo <= num2) faça
+            para i de 1 até num2 faça
+               cubo <- i * i * i
 
-   enquanto (cubo <= num2) faça
-      para i de 1 até num2 faça
-      cubo <- i * i * i
+               se (cubo <= num2) e (cubo >= num1) então
+                  escreval (i, " *", i, " *", i, " =", cubo)
+                  cont <- cont + 1
+               fimse
 
-         se (cubo <= num2) e (cubo >= num1) então
-            escreval (i, " *", i, " *", i, " =", cubo)
-            cont <- cont + 1
+            fimpara
+         fimenquanto
+
+         cubo <- 0
+
+         se (cont = 0) então
+            escreval ("Zero. Não há cubos no intervalo informado")
          fimse
-
-      fimpara
-   fimenquanto
-
-   cubo <- 0
-
-   se (cont = 0) então
-      escreval ("Zero. Não há cubos no intervalo informado")
-   fimse
-   cont <- 0
+         cont <- 0
 
          escreval ("")
          escreval ("Tecle <enter> para voltar ao menu")
          leia (voltar)
          limpatela
 
-//Inicio da opção 10 - Sair do menu
+         //Inicio da opção 10 - Sair do menu
       caso 10
          escreval ("Você escolheu a opção 10 - SAIR")
          limpatela
-//Caso de opção inválida
+         //Caso de opção inválida
       outrocaso
          limpatela
          escreval ("Opção inválida!")
@@ -383,6 +409,3 @@ limpatela
 
    fimenquanto
 Fimalgoritmo
-
-
-
