@@ -15,11 +15,10 @@
 -  [X] Critérios de aceitação definidos
 
 ## ✅ Definition of Done (DoD)
--  [x] Código escrito e funcional
--  [x] Revisões e testes feitos
--  [x] Documentação atualizada
--  [x] Code review aprovado
-
+-  [X] Código escrito e funcional
+-  [X] Revisões e testes feitos
+-  [X] Documentação atualizada
+-  [X] Code review aprovado
 
 
 
