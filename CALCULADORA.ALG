@@ -6,25 +6,25 @@ Algoritmo "calculadora"
 // Data atual  : 15/09/2025
 Var
    // Seção de Declarações das variáveis
-   opcao, x, qnt_termos, i, quadrado, cont, fatorial, limite, proximo, num1, num2, cont_div, j:inteiro
+   opcao, voltar, qnt_termos, i, quadrado, cont, fatorial, limite, proximo, num1, num2, num3, cont_div, j, cubo:inteiro
    termo, razao :real
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
    enquanto opcao <>10 faca
       escreval ("")
       escreval ("------MENU CALCULADORA-------")
-      escreval ("")
-      escreval (" 01 - Quadrados Perfeitos ")
-      escreval (" 02 - Fatorial ")
-      escreval (" 03 - Fibonacci")
-      escreval (" 04 - Sequência Geométrica")
-      escreval (" 05 - Sequência Alternada")
-      escreval (" 06 - Números Primos")
-      escreval (" 07 - Tribonacci")
-      escreval (" 08 - Sequência Triangular")
-      escreval (" 09 - Sequência de Cubos")
-      escreval (" 10 - SAIR")
-      escreval ("")
+      escreval ("                             |")
+      escreval (" 01 - Quadrados Perfeitos    |")
+      escreval (" 02 - Fatorial               |")
+      escreval (" 03 - Fibonacci              |")
+      escreval (" 04 - Sequência Geométrica   |")
+      escreval (" 05 - Sequência Alternada    |")
+      escreval (" 06 - Números Primos         |")
+      escreval (" 07 - Tribonacci             |")
+      escreval (" 08 - Sequência Triangular   |")
+      escreval (" 09 - Sequência de Cubos     |")
+      escreval (" 10 - SAIR                   |")
+      escreval ("                             |")
       Escreval ("-----------------------------")
 
       escreval ("Digite a opção: ")
@@ -35,7 +35,13 @@ Inicio
 //inicio da opcao 01 - Quadrados perfeitos
       caso 1
          limpatela
-         escreval ("Você escolheu a opção 01 - Quadrados Perfeitos")
+         escreval ("----------QUADRADOS PERFEITOS-----------")
+         escreval("Para este cálculo você deve inserir")
+         escreval("o número inicial e final.")
+         escreval("E então será retornado os quadrados perfeitos")
+         escreval("dentro do período entre os dois números.")
+         escreval ("----------------------------------------")
+         escreval("")
          repita
             escreval ("Digite o primeiro número (deve ser positivo): ")
             leia (num1)
@@ -43,7 +49,7 @@ Inicio
             leia (num2)
          até (num2 > num1)
          limpatela
-         escreval ("Quadrados perfeitos dentro do período",num1," e",num2,": ")
+         escreval ("Quadrados perfeitos dentro do período de",num1," a",num2,": ")
          enquanto (quadrado <= num2) faça
             para i <- 1 até num2 faça
                quadrado <- i * i
@@ -59,13 +65,18 @@ Inicio
          quadrado <- 0
          cont <- 0
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 
 //inicio da opcao 02 - Fatorial
       caso 2
          limpatela
-         escreval ("Você escolheu a opção 02 - Fatorial")
+         escreval ("----------------FATORIAL----------------")
+         escreval("Para este cálculo você deve inserir qual")
+         escreval("número que deseja calcular o fatorial.")
+         escreval("E então será retornado o fatorial deste número.")
+         escreval ("----------------------------------------")
+         escreval("")
          escreval ("Digite um numero inteiro para calcular o fatorial")
          leia (num1)
          limpatela
@@ -91,13 +102,18 @@ Inicio
          escreval ("O fatorial de", num1 ," é", fatorial)
 
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 
 //inicio da opcao 03 Sequência de Fibonacci
       caso 3
          limpatela
-         escreval("Bem vindo ao calculo de Fibonacci. Digite dois valores:")
+         escreval ("----------------FIBONACCI----------------")
+         escreval("Para este cálculo você deve inserir os dois")
+         escreval("primeiros número da sequência e o valor limite.")
+         escreval("E então será retornado a sequência Fibonacci")
+         escreval ("----------------------------------------")
+         escreval("")
          repita
             repita
                escreval("Digite o primeiro valor:")
@@ -128,13 +144,19 @@ Inicio
          até (num1 e num2) <> 0
 
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 
 //Inicio da opção 04 - Sequência geométrica
       caso 4
          limpatela
-         escreval ("Você escolheu a opção 04 - Sequencia Geométrica")
+         escreval ("----------SEQUÊNCIA GEOMÉTRICA---------")
+         escreval("Para este cálculo você deve inserir o termo")
+         escreval("inicial, a razão (multiplicador) e a")
+         escreval("quantidade de termos desejada.")
+         escreval("E então será retornado a sequência geométrica")
+         escreval ("----------------------------------------")
+         escreval("")
          escreval("Digite o termo inicial:")
          leia(termo)
 
@@ -158,16 +180,16 @@ Inicio
 
 
          limpatela
-         escreval("=== Sequência Geométrica ===")
+         escreval("A sequência geométrica com os valores informados é:")
 
          para i de 1 ate qnt_termos faca
             escreval("Termo ", i, ": ", termo)
-               //resultado <- resultado * razao
+
                termo <- termo * razao
          fimpara
 
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 
 //Inicio da opção 05 - Sequência alternada
@@ -195,7 +217,7 @@ Inicio
          fimpara
 
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 
 // Inicio da opção 06 - Sequência de numeros primos
@@ -239,35 +261,112 @@ Inicio
          cont <- 0
 
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 // Inicio da opção 07 -  Sequência de tribonacci
-      caso 7
+    caso 7
+limpatela
+ escreval("Bem vindo ao calculo de Tribonacci. Digite três valores:")
+   repita
+      repita
+         escreval("Digite o primeiro valor:")
+         leia(num1)
+         escreval("Digite o segundo valor:")
+         leia(num2)
+         escreval("Digite o terceiro valor:")
+         leia(num3)
+         escreval("Digite o limite:")
+         leia(limite)
+
+         se (limite < num1) ou (limite < num2) ou (limite < num3)entao
+            limpatela
+            escreval ("Valor limite tem que ser maior que os valores iniciais.")
+         fimse
+      até (num1 e num2 e num3) < limite
+      se (num1 = 0) e (num2 = 0) e (num3 = 0) entao
          limpatela
-         escreval ("Você escolheu a opção 07 - Tribonacci")
-         escreval ("Opção ainda em desenvolvimento")
+         escreval("Você digitou 0 nos três valores, isso da sequência infinita!")
+      senao
+         escreval ("A sequência Tribonacci com os valores informados é: ")
+         enquanto num1 <= limite faca
+            escreva(num1)
+            proximo <- num1 + num2 + num3
+            num1 <- num2
+            num2 <- num3
+            num3 <- proximo
+         fimenquanto
          escreval ("")
+      fimse
+   até (num1 e num2 e num3) <> 0
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 //Inicio da opção 08 - Número triangular
       caso 8
          limpatela
          escreval ("Você escolheu a opção 08 - Número Triangular")
-         escreval ("Opção ainda em desenvolvimento")
-         escreval ("")
+         repita
+      repita
+         limpatela
+         Escreval("Digite o primeiro número do intervalo:")
+         leia(itv1)
+         Escreval("Digite o número máximo do intervalo:")
+         leia(itv2)
+      ate itv2 > itv1
+      limpatela
+
+      se (itv1 < 0) e (itv2 < 0) entao
+         escreval("Intervalo inválido! Digite um número inteiro e positivo")
+      fimse
+   ate (itv1 > 0) e (itv2 > 0)
+   para i de itv1 ate itv2 faça
+
+      numtg <- i * (i + 1) / 2
+
+      Escreval("O ", i, "° número da sequencia triangular é ", numtg)
+   fimpara
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 
  //Inicio da opção 09 - Sequência de cubos
       caso 9
          limpatela
          escreval ("Você escolheu a opção 09 - Sequência de Cubos")
-         escreval ("Opção ainda em desenvolvimento")
+
+          repita
+      escreval("Digite o primeiro número (deve ser maior que 0): ")
+      leia (num1)
+      escreval ("Digite o segundo número (deve ser maior que o primeiro): ")
+      leia (num2)
+   até (num2 > num1) e (num1 > 0)
+
+   escreval ("")
+   escreval ("Cubos dentro do intervalo determinado (",num1, " e", num2, "): ")
+   escreval ("")
+
+   enquanto (cubo <= num2) faça
+      para i de 1 até num2 faça
+      cubo <- i * i * i
+
+         se (cubo <= num2) e (cubo >= num1) então
+            escreval (i, " *", i, " *", i, " =", cubo)
+            cont <- cont + 1
+         fimse
+
+      fimpara
+   fimenquanto
+
+   cubo <- 0
+
+   se (cont = 0) então
+      escreval ("Zero. Não há cubos no intervalo informado")
+   fimse
+   cont <- 0
+
          escreval ("")
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
 
 //Inicio da opção 10 - Sair do menu
@@ -279,9 +378,11 @@ Inicio
          limpatela
          escreval ("Opção inválida!")
          escreval ("Tecle <enter> para voltar ao menu")
-         leia (x)
+         leia (voltar)
          limpatela
       fimescolha
 
    fimenquanto
 Fimalgoritmo
+
+
