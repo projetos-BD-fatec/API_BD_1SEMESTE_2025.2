@@ -53,7 +53,7 @@ Inicio
             para i <- 1 até num2 faça
                quadrado <- i * i
                se (quadrado >= num1) e (quadrado <= num2) então
-                  escreval(quadrado)
+                  escreval(i, " *", i, " =", quadrado)
                   cont <- cont + 1
                fimse
             fimpara
@@ -343,7 +343,7 @@ Inicio
 
             termo <- i * (i + 1) / 2
 
-            Escreval("O ", i, "° número da sequencia triangular é ", num3)
+            Escreval("O ", i, "° número da sequencia triangular é ", termo)
          fimpara
          escreval ("Tecle <enter> para voltar ao menu")
          leia (voltar)
