@@ -21,7 +21,7 @@
   <a href ="#equipe"> Equipe</a> |
 </p>
 
-> Status do Projeto: Sprint 2  🧑‍💻 
+> Status do Projeto:Concluído 🧑‍💻 
 >
 > Pasta de Documentação: [Link](Processo) 📄
 
@@ -68,7 +68,7 @@ Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas - Permitirá 
 ## 🏆 DoD - Definition of Done <a id="dod"></a>
 - [x] Código final escrito e funcional
 - [x] Documentação finalizada
-- [ ] Code review aprovado
+- [x] Code review aprovado
 
 ---
 
